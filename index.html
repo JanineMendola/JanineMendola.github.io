@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Time Loss of Flight Delays</title>
+	<script src="https://unpkg.com/enter-view"></script>
+</head>
+<style type="text/css">
+body, html {
+	font-family:"Helvetica-Neue", sans-serif;
+	top:0;
+	left:0;
+	margin:0;
+	color:#214098;
+}
+#featured {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  overflow:none;
+}
+.aligner {
+	max-width:80%;
+}
+#featured .title{
+	text-align:center;
+	margin-top:5%;
+	width:100%;
+}
+.title h2 {
+	font-size:1em;
+	font-weight:400;
+}
+#featured img {
+  width:100%;
+}
+#scroll {
+  font-stretch:expanded;
+  text-align:center;
+  width:80%;
+  position:absolute;
+  bottom:10%;
+  font-size:6em;
+  color:#1d1d1d;
+  cursor:pointer;
+  transition:0.5s all ease-in-out;
+  line-height:0.5em;
+}
+#scroll:hover {
+  transform:scale(1.2);
+  transform-origin:50% 30%;
+}
+.section{
+  opacity:0;
+  width:100%;
+  height:auto;
+  padding:5%;
+  margin-bottom:0%;
+  padding-bottom:0%;
+  line-height:2em;
+  transform:translateY(5em);
+  transition:0.5s ease-in-out;
+  margin:auto;
+}
+.section img {
+	width:100%;
+}
+.entered {
+  transform:translateY(0em);
+  opacity:1;
+}
+.tableauPlaceholder {
+	height:50vh;
+}
+.scrollpost {
+	width:100%;
+	padding:0;
+	margin:0;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	white-space:nowrap;
+}
+.scrollpost img {
+	width:100%;
+	display:inline-block;
+	margin:0% 4% 0% 0%;
+}
+
+pen {
+	position:relative;
+		text-align:center;
+	margin:auto;
+}
+.open:hover .overlay{
+	opacity:0.8;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity:0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	cursor:pointer;
+	transition:0.5s ease-in-out;
+}
+.open img {
+	width:80%;
+}
+
+.overlay h2 {
+	color:white;
+	background-color:none;
+	margin:auto;
+}
+#final {
+	margin-bottom:5%;
+}
+.open a {
+	text-decoration:none;
+	background-color:none;
+	padding:2% 4%;
+	cursor:pointer;
+	border:0.05em solid white;
+	transition:0.5s ease-in-out;
+}
+.open a:hover {
+	background-color:white;
+}
+.open a:hover h2{
+	color:#1d1d1d;
+}
+@media screen and (max-width:767px){
+	#featured img {
+		margin-left:-50%;
+		bottom:0;
+		position:absolute;
+		width:200%;
+		z-index:0;
+	}
+	#featured .title {
+		z-index:1;
+	}
+	.scrollpost img {
+		width:10%;
+	}
+}
+</style>
+<body>
+
+<div id="featured">
+	<div class="aligner">
+		<div class="title">
+		<h1>How Much Time Do Americans Spend Waiting for Delayed Flights ?</h1>
+		<h2>A Graphical Data Analysis Projoject by Janine Mendola</h2>
+		</div>
+		
+		
+	  	<img src="assets/featured/waitinglogoblue.png">
+	 	 <div id="scroll">&#xfe40;</div>	
+	</div>
+</div>
+
+<!-- Simple text intro -->
+<div class="section" id="first">
+	<h1>Lets look at the delays in the U.S. for one month - December 2018</h1>
+	
+		
+	
+
+<!-- Simple text intro -->
+<div class="section">
+	<h1>Why Are the People Waiting?</h1>
+	<p>There are five recognized causes of flight delays.  The first is severe weather.  The second is a late arrival of the airplane into the airport from a previous flight.  The third type is considered to be caused by circumstances within the carrier’s control such as issues with crew or maintenance.  The forth type is due to the national aviation system (NAS) such as heavy volume, or non-extreme weather.  The fifth type is security breach or problems with the security screening operations.    </p>
+
+<div id="videoal">
+    <div class="video">
+        <video controls>
+            <source src="assets/video/watchwhite.mp4" type="video/mp4">
+        </video>
+    
+</div>
+
+ 
+<style type="text/css">
+	.tooltip {
+		font-family:'Helvetica Neue', sans-serif;
+		font-size:1em;
+		font-weight:800;
+		border:0.05em solid #1d1d1d;
+		position:fixed;
+		background-color:white;
+		opacity:0;
+		padding:2%;
+		transition:0.25s ease-in-out;
+	}
+	rect {
+		cursor:pointer;
+		transition:0.25s ease-in-out;
+	}
+
+</style>
+<body>
+
+<!-- insert svg code here -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 684.7 219.52" style="enable-background:new 0 0 684.7 219.52;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#6D6E71;}
+	.st1{font-family:'Helvetica Neue';}
+	.st2{font-size:9px;}
+	.st3{font-size:21.0343px;}
+	.st4{font-size:18.0294px;}
+	.st5{fill:#EEC945;stroke:#D1D3D4;stroke-width:0.5;stroke-miterlimit:10;}
+	.st6{fill:#EEC945;}
+</style>
+<g id="Layer_37">
+	<text transform="matrix(1 0 0 1 79.2513 70.917)" class="st0 st1 st2">WEATHER DELAY</text>
+</g>
+<g id="Layer_36">
+	<text transform="matrix(1 0 0 1 55.0609 90.335)" class="st0 st1 st2">LATE AIRCRAFT DELAY</text>
+</g>
+<g id="Layer_35">
+	<text transform="matrix(1 0 0 1 83.5423 109.5654)" class="st0 st1 st2">CARRIER DELAY</text>
+</g>
+<g id="Layer_34">
+	<text transform="matrix(1 0 0 1 102.8206 127.2969)" class="st0 st1 st2">NAS DELAY</text>
+</g>
+<g id="Layer_33">
+	<text transform="matrix(1 0 0 1 78.4925 146.1445)" class="st0 st1 st2">SECURITY DELAY</text>
+</g>
+<g id="Layer_32">
+	<text transform="matrix(1 0 0 1 160.3739 164.8936)" class="st0 st1 st2">0</text>
+</g>
+<g id="Layer_31">
+	<text transform="matrix(1 0 0 1 203.6414 164.8936)" class="st0 st1 st2">5</text>
+</g>
+<g id="Layer_30">
+	<text transform="matrix(1 0 0 1 387.5042 164.8936)" class="st0 st1 st2">25</text>
+</g>
+<g id="Layer_29">
+	<text transform="matrix(1 0 0 1 246.9095 164.8936)" class="st0 st1 st2">10</text>
+</g>
+<g id="Layer_28">
+	<text transform="matrix(1 0 0 1 290.1771 164.8936)" class="st0 st1 st2">15</text>
+</g>
+<g id="Layer_27">
+	<text transform="matrix(1 0 0 1 338.8401 164.8936)" class="st0 st1 st2">20</text>
+</g>
+<g id="Layer_26">
+	<text transform="matrix(1 0 0 1 436.1663 164.8936)" class="st0 st1 st2">30</text>
+</g>
+<g id="Layer_25">
+	<text transform="matrix(1 0 0 1 484.8294 164.8936)" class="st0 st1 st2">35</text>
+</g>
+<g id="Layer_24">
+	<text transform="matrix(1 0 0 1 533.6419 164.3126)" class="st0 st1 st2">40</text>
+</g>
+<g id="Layer_23">
+	<text transform="matrix(1 0 0 1 582.6541 164.6698)" class="st0 st1 st2">45</text>
+</g>
+<g id="Layer_22">
+	<text transform="matrix(1 0 0 1 628.6865 164.84)" class="st0 st1 st2">50</text>
+</g>
+<g id="Layer_21">
+	<text transform="matrix(1 0 0 1 47.8255 51.3965)" class="st1 st3">Average Length of Delay by Type in Minutes</text>
+</g>
+<g id="Layer_20">
+	<text transform="matrix(1 0 0 1 370.7103 185.1133)" class="st1 st4">Minutes</text>
+</g>
+<g id="Layer_19">
+	<line class="st5" x1="633.36" y1="61.43" x2="633.36" y2="148.27"/>
+</g>
+<g id="Layer_18">
+	<line class="st5" x1="587.46" y1="61.59" x2="587.46" y2="148.42"/>
+</g>
+<g id="Layer_17">
+	<line class="st5" x1="538.61" y1="61.44" x2="538.61" y2="148.27"/>
+</g>
+<g id="Layer_16">
+	<line class="st5" x1="490.41" y1="61.91" x2="490.41" y2="148.74"/>
+</g>
+<g id="Layer_15">
+	<line class="st5" x1="443.84" y1="61.91" x2="443.84" y2="148.74"/>
+</g>
+<g id="Layer_14">
+	<line class="st5" x1="396.6" y1="62.81" x2="396.6" y2="149.65"/>
+</g>
+<g id="Layer_13">
+	<line class="st5" x1="348.52" y1="61.01" x2="348.52" y2="147.84"/>
+</g>
+<g id="Layer_12">
+	<line class="st5" x1="299.7" y1="60.68" x2="299.7" y2="147.52"/>
+</g>
+<g id="Layer_11">
+	<line class="st5" x1="253.12" y1="60.68" x2="253.12" y2="147.52"/>
+</g>
+<g id="Layer_10">
+	<line class="st5" x1="204.38" y1="61.69" x2="204.38" y2="148.53"/>
+</g>
+<g id="Layer_9">
+	<line class="st5" x1="157.81" y1="59.91" x2="157.81" y2="146.85"/>
+</g>
+<g id="Layer_8">
+	<line class="st5" x1="633.94" y1="146.79" x2="157.56" y2="146.79"/>
+</g>
+<g id="Layer_7">
+	
+		<rect x="157.52" y="63.59" onmouseover="updateTooltip('48.9')" onmouseout="clearTooltip()" class="st6" width="456.79" height="10.67"/>
+</g>
+<g id="Layer_6">
+	
+		<rect x="157.95" y="81.92" onmouseover="updateTooltip('40.0')" onmouseout="clearTooltip()" class="st6" width="380.33" height="10"/>
+</g>
+<g id="Layer_5">
+	
+		<rect x="157.12" y="100.28" onmouseover="updateTooltip('32.6')" onmouseout="clearTooltip()" class="st6" width="310.29" height="10.48"/>
+</g>
+<g id="Layer_4">
+	
+		<rect x="157.84" y="117.24" onmouseover="updateTooltip('22.16')" onmouseout="clearTooltip()" class="st6" width="209.81" height="10.18"/>
+</g>
+<g id="Layer_3">
+	
+		<rect x="157.56" y="136.85" onmouseover="updateTooltip('21.38')" onmouseout="clearTooltip()" class="st6" width="202.42" height="10.3"/>
+</g>
+<g id="Layer_2">
+</g>
+</svg>
+
+
+<!-- end svg code here -->
+
+<div class="tooltip"></div>
+
+</body>
+<script type="text/javascript">
+
+let tooltip=document.querySelector('.tooltip')
+
+// gets position of mouse on the page
+function getpos(event) {
+	var e = window.event;
+	x = e.clientX ;
+	y = e.clientY ;
+} 
+
+function updateTooltip(text_to_display){
+	tooltip.innerHTML=text_to_display
+	getpos()
+	tooltip.style.opacity=1
+	tooltip.style.left=x+30+"px"
+	tooltip.style.top=y-30+"px"
+}
+
+function clearTooltip() {
+	tooltip.style.opacity=0
+}
+
+</script>
+</html>		
+	</div>
+
+<!-- About the data carousel -->
+<div class="section">
+	<h1>How long are they waiting?</h1>
+	<p>We saw above that a typical flight delay averages about 30-40 minutes.  While this may seem reasonable given the complexities of air travel, the effects on lost productivity are not negligable.  In our sample month, December 2018, there were 500,000 recorded flights in the U.S.  About 25% of the flights experienced a delay.   If all these delays across the entire country are added up then the total is a very large number.  In fact, these total accumulated delays can be several years long!   </p>
+	
+
+
+  <div id="videoal">
+    
+    <div class="video">
+       <video controls>
+           <source src="assets/video/calendar.mp4" type="video/mp4">
+       </video>
+    </div>
+    
+</div>
+
+
+
+	<div class="scrollpost">
+		<img src="assets/totaldelay/totaldelay.pdf">
+</div>
+<!-- Tableau Public embed -->
+
+<div class="section">
+	<h1>Where are they waiting? </h1>
+	<p>The number of dealyed flights at any givien airport is rought proportional to the number of flights it handles.  So the most delays occur at America’s largest airports.   Major hub cities such as Chicago, Atlanta, Charlotte, Dallas-Fort Worth, and Denver experience a lot of delays.  Many delays also occur in big airports near large cities including Boston, New York, Philadelphia, Washington D.C, Tampa, Miami, Houston, Pheonix, Las Vegas, Los Angelis and San Francisco.  </p>
+
+<div class='tableauPlaceholder' id='viz1575913166968' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ge&#47;GeoShort&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GeoShort&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ge&#47;GeoShort&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1575913166968');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</div>
+
+<!-- About the data carousel -->
+<div class="section">
+	<h1>When are they waiting?</h1>
+	<p>The number of dealyed flights slowly increases though out the day.  This is due to the accumulative effect of delays earlier in the day , as well as developing weather condtions. The increase peaks at about 5PM and then declines into the evening hours.  </p>
+	<!-- the scrolling post holder -->
+	
+
+  <div id="videoal">
+    <div class="video">
+       <video controls>
+           <source src="assets/video/sunset.mp4" type="video/mp4">
+       </video>
+    </div>
+</div>
+
+
+	<div class="scrollpost">
+		<img src="assets/timeofday/timeofday.png">
+	
+	</div>
+</div>
+
+<div class="section" id="first">
+	<h1>About this data:</h1>
+	<p>Obtained from the publically available database maintained by the U.S. Department of Transportation, Bureau of Transportation Statistics. website: http://transtats.bts.gov   </p>
+<div class="scrollpost">
+		<img src="assets/about-the-data/translogo.png">
+		
+	</div>
+
+
+</body>
+<script type="text/javascript">
+
+scroll=document.querySelector('#scroll');
+setup = document.querySelector('#first');
+scroll.onclick=function() {
+    first.scrollIntoView({ 
+    behavior: 'smooth',
+    block: "start",
+  });
+};
+
+enterView({
+  selector: '.section',
+  enter: function(el) {
+    el.classList.add('entered');
+  },
+  exit: function(el) {
+    el.classList.remove('entered');
+  },
+  progress: function(el, progress) {
+
+  },
+  offset: 0.2, // enter at middle of viewport
+});
+
+</script>
+</html>
